@@ -14,7 +14,8 @@
  */
 
 function averageMark(a, g, p) {
-    return (a + g + p) / 3;
+
+    return Math.round((a + g + p) / 3);
 }
 
 /**
@@ -25,6 +26,7 @@ function averageMark(a, g, p) {
  */
 
 function sayHello(userName) {
+
     return `Привет, мир! Меня зовут ${userName}`;
 }
 
@@ -41,5 +43,6 @@ function calculateFormula() {
     let x = 2,
         y = 22,
         z = 0;
+
     return x * y + 5 * z + x - 1;
 }
