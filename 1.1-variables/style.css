@@ -1,0 +1,24 @@
+section {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background: #d7d7d7;
+}
+
+input,
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #333333;
+}
+
+button {
+    background: #396782;
+    color: aliceblue;
+}
+
+span{
+    color: #007069;
+    padding: 5px;
+}
