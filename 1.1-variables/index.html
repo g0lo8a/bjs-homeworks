@@ -7,17 +7,19 @@
     <title>Homework 1.1</title>
 </head>
 <body>
+
 <h1>Домашнее задание к занятию 1.1 «Базовый синтаксис»</h1>
+
 <section>
-    <p><input type="number" placeholder="Алгебра" id="algebra"></p>
-    <p><input type="number" placeholder="География" id="geography"></p>
-    <p><input type="number" placeholder="Физика" id="physics"></p>
+    <p><label for="algebra">Введите оценку: </label><input type="number" placeholder="Алгебра" id="algebra"></p>
+    <p><label for="geography">Введите оценку: </label><input type="number" placeholder="География" id="geography"></p>
+    <p><label for="physics">Введите оценку: </label><input type="number" placeholder="Физика" id="physics"></p>
     <button onClick="calculateTask1()">Считать задание №1</button>
     <span id="task1Result"></span>
 </section>
 
 <section>
-    <p><input type="text" placeholder="Имя пользователя" id="username"></p>
+    <p><label for="username">Введите имя пользователя: </label><input type="text" placeholder="Имя пользователя" id="username"></p>
     <button onClick="calculateTask2()">Считать задание №2</button>
     <span id="task2Result"></span>
 </section>
@@ -27,8 +29,8 @@
     <span id="task3Result"></span>
 </section>
 
-
 <script src="main.js"></script>
 <script src="task.js"></script>
+
 </body>
 </html>
