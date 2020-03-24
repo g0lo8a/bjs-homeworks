@@ -2,34 +2,45 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Homework 1.2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Homework 1.2</title>
 </head>
 
 <body>
-    <input type="number" placeholder="a" id="a"><br><br>
-    <input type="number" placeholder="b" id="b"><br><br>
-    <input type="number" placeholder="c" id="c"><br><br>
-    <button onClick="calculateQuadraticEquation()">Считать задание №1</button><br>
-    <span id="equation"></span><br>
-    <span id="result"></span>
-    <hr/>
-    
-    <input type="text" placeholder="marks" id="marks"><br><br>
-    <button onClick="calculateAverageRating()">Считать задание №2</button><br>
-    <span id="averageMark"></span>
-    <hr/>
-    
-    <input type="text" placeholder="Name" id="personName"><br><br>
-    <input type="date" id="dateOfBirthday" value="2000-01-01"><br><br>
-    <button onClick="calculateDrinkTask()">Считать задание №3</button><br>
-    <span id="drink"></span>
-    <hr/>
+<h1>Домашнее задание к занятию 1.2 «Расширенный синтаксис»</h1>
+<section>
+    <h2>Задача № 1</h2>
+    <p><input type="number" placeholder="a" id="a"><label for="a"> Введите первый коэффициент</label></p>
+    <p><input type="number" placeholder="b" id="b"><label for="b"> Введите второй коэффициент</label></p>
+    <p><input type="number" placeholder="c" id="c"><label for="c"> Введите свободный член</label></p>
+    <button onClick="calculateQuadraticEquation()">Считать задание №1</button>
+    <p>Уравнение: <span id="equation"></span></p>
+    <p>Результат: <span id="result"></span></p>
+</section>
 
-    <script src="main.js"></script>
-    <script src="task.js"></script>
+<section>
+    <h2>Задача № 2</h2>
+    <p><input type="text" placeholder="marks" id="marks"><label for="marks"> Введите оценки, разделенные пробелом или
+        запятой</label></p>
+    <button onClick="calculateAverageRating()">Считать задание №2</button>
+    <p>Средняя оценка: <span id="averageMark"></span></p>
+</section>
+
+<section>
+    <h2>Задача № 3(со "звездочкой")</h2>
+    <p><input type="text" placeholder="Name" id="personName"><label for="personName"> Введите имя</label></p>
+    <p><input type="date" id="dateOfBirthday" value="2000-01-01"><label for="dateOfBirthday"> Введите дату
+        рождения</label></p>
+    <button onClick="calculateDrinkTask()">Считать задание №3</button>
+    <p>Результат: <span id="drink"></span></p>
+</section>
+
+<script src="main.js"></script>
+<script src="task.js"></script>
 </body>
 
 </html>
