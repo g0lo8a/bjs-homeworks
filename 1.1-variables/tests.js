@@ -5,7 +5,7 @@ describe('Домашнее задание к занятию 1.1 «Базовый
   
     it('Задача №2 должна правильно приветствовать', () => {
       const name = "Иван";
-      const actualHelo = `Привет, мир! Меня зовут ${name}`
+      const actualHelo = `Привет, мир! Меня зовут ${name}`;
       expect(sayHello(name)).toEqual(actualHelo);
     });
 
