@@ -28,7 +28,7 @@ console.log(showSolutionsMessage(7, 20, -3));
 console.log(showSolutionsMessage(2, 4, 2));
 
 const journalSemWhite = {
-    /*algebra: [2, 4, 5, 2, 3, 4],
+    algebra: [2, 4, 5, 2, 3, 4],
     geometry: [2, 4, 5],
     russian: [3, 3, 4, 5],
     physics: [5, 5],
@@ -36,7 +36,7 @@ const journalSemWhite = {
     english: [4, 4, 3],
     poetry: [5, 3, 4],
     chemistry: [2],
-    french: [4, 4],*/
+    french: [4, 4],
 };
 
 function getAverageMark(marks) {
