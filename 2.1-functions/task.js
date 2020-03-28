@@ -55,3 +55,40 @@ function getAverageScore(data) {
 }
 
 console.log(getAverageScore(journalSemWhite));
+
+
+function getPersonData(secretData) {
+    let noSecretData = {};
+    if (secretData.aaa === 0) {
+        noSecretData.firstName = 'Родриго';
+    } else {
+        noSecretData.firstName = 'Эмильо';
+    }
+    if (secretData.bbb === 0) {
+        noSecretData.lastName = 'Родриго';
+    } else {
+        noSecretData.lastName = 'Эмильо';
+    }
+
+    return noSecretData;
+}
+
+console.log(getPersonData({
+    aaa: 0,
+    bbb: 0
+}));
+
+console.log(getPersonData({
+    aaa: 1,
+    bbb: 0
+}));
+
+console.log(getPersonData({
+    aaa: 0,
+    bbb: 1
+}));
+
+console.log(getPersonData({
+    aaa: 1,
+    bbb: 1
+}));
