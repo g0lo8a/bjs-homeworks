@@ -28,7 +28,7 @@ console.log(showSolutionsMessage(7, 20, -3));
 console.log(showSolutionsMessage(2, 4, 2));
 
 const journalSemWhite = {
-    algebra: [2, 4, 5, 2, 3, 4],
+    /*algebra: [2, 4, 5, 2, 3, 4],
     geometry: [2, 4, 5],
     russian: [3, 3, 4, 5],
     physics: [5, 5],
@@ -36,16 +36,28 @@ const journalSemWhite = {
     english: [4, 4, 3],
     poetry: [5, 3, 4],
     chemistry: [2],
-    french: [4, 4],
+    french: [4, 4],*/
 };
+
+function getAverageMark(marks) {
+    if (marks.length === 0) {
+        return 0;
+    }
+    return marks.reduce((sum, current) => sum + current, 0) / marks.length
+}
 
 function getAverageScore(data) {
     let i = 0,
         average = 0,
         obj = {};
 
+    if (Object.keys(data).length === 0) {
+        obj.average = 0;
+        return obj;
+    }
+
     for (let key in data) {
-        obj[key] = data[key].reduce((sum, current) => sum + current, 0) / data[key].length;
+        obj[key] = getAverageMark(data[key]);
         i++;
         average += obj[key];
     }
@@ -56,21 +68,22 @@ function getAverageScore(data) {
 
 console.log(getAverageScore(journalSemWhite));
 
+function getDecodedValue(secret) {
+    if (secret === 0) {
+
+        return 'Родриго';
+    } else {
+
+        return 'Эмильо';
+    }
+}
 
 function getPersonData(secretData) {
-    let noSecretData = {};
-    if (secretData.aaa === 0) {
-        noSecretData.firstName = 'Родриго';
-    } else {
-        noSecretData.firstName = 'Эмильо';
-    }
-    if (secretData.bbb === 0) {
-        noSecretData.lastName = 'Родриго';
-    } else {
-        noSecretData.lastName = 'Эмильо';
-    }
 
-    return noSecretData;
+    return {
+        firstName: getDecodedValue(secretData.aaa),
+        lastName: getDecodedValue(secretData.bbb)
+    };
 }
 
 console.log(getPersonData({
