@@ -3,19 +3,15 @@
 function getResult(a, b, c) {
     let d = (b * b) - (4 * a * c),
         x = [];
-    if (d < 0) {
 
-        return x;
-    } else if (d === 0) {
+    if (d === 0) {
         x.push(-b / (2 * a));
-
-        return x;
     } else if (d > 0) {
         x.push((-b + Math.sqrt(d)) / (2 * a));
         x.push((-b - Math.sqrt(d)) / (2 * a));
-
-        return x;
     }
+
+    return x;
 }
 
 function getAverageMark(marks) {
