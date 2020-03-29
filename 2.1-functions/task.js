@@ -69,13 +69,8 @@ function getAverageScore(data) {
 console.log(getAverageScore(journalSemWhite));
 
 function getDecodedValue(secret) {
-    if (secret === 0) {
 
-        return 'Родриго';
-    } else {
-
-        return 'Эмильо';
-    }
+    return secret ? 'Эмильо' : 'Родриго';
 }
 
 function getPersonData(secretData) {
