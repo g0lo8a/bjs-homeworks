@@ -1,6 +1,10 @@
 'use strict';
 
 function calculateTotalMortgage(percent, contribution, amount, date) {
+    if (isNaN(percent) || isNaN(contribution) || isNaN(amount)) {
+
+        return 'Данные не верны!';
+    }
     if (percent >= 10 && contribution >= 0 && amount && date > (Date.now() + (60000 * 60 * 24 * 30))) {
         let loanBody = amount - contribution,
             p = percent / 100 / 12,
@@ -12,6 +16,7 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
 
         return totalAmount;
     } else {
+
         return 'Данные не верны!';
     }
 }
