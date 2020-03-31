@@ -1,14 +1,16 @@
+'use strict';
+
 function getAnimalSound(animal) {
-    // код для задачи №1 писать здесь
-    // return animalSound;
+
+    return animal === undefined ? null : animal.sound;
 }
 
 function getAverageMark(marks) {
-    // код для задачи №2 писать здесь
-    // return averageMark
+
+    return Math.round(marks.reduce((sum, current) => sum + +current, 0) / marks.length) || 0;
 }
 
 function checkBirthday(birthday) {
-    // код для задачи №3 писать здесь
-    // return verdict
+
+    return ((Date.now() - +new Date(birthday)) / (60000 * 60 * 24 * 365)) > 18;
 }

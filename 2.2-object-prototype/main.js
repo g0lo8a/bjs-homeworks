@@ -3,25 +3,19 @@ function initPrintAnimalSound() {
         sound: 'grrrr',
     };
 
-    const result = getAnimalSound(animal);
-
-    document.getElementById('sound').innerHTML = result;   
+    document.getElementById('sound').innerHTML = getAnimalSound(animal);
 }
 
 function initCalculateStatement() {
     for (let idx = 0; idx < 3; idx++) {
         const marks = document.getElementById('learner-' + idx).value.split(',');
 
-        const average = getAverageMark(marks);
-
-        document.getElementById('learner-' + idx + '-average').innerHTML = average;
+        document.getElementById('learner-' + idx + '-average').innerHTML = getAverageMark(marks);
     }
 }
 
 function initCheckBirthday() {
     const birthday = document.getElementById('birthday').value;
 
-    const result = checkBirthday(birthday) ? "Да" : "Нет";
-
-    document.getElementById('disclaimer').innerHTML = result;   
+    document.getElementById('disclaimer').innerHTML = checkBirthday(birthday) ? "Да" : "Нет";
 }
