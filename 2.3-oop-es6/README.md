@@ -75,7 +75,7 @@ console.log(bow.durability); // 0
 console.log(bow.getDamage()); // 0
 
 console.log(arm.durability); // Infinity
-console.log(bow.getDamage()); // 1
+console.log(arm.getDamage()); // 1
 ```
 
 4. Создайте метод `isBroken()`, показывающий, сломано ли оружие. Возвращает `false` при durability более 0.
@@ -85,7 +85,7 @@ console.log(bow.durability); // 0
 console.log(bow.isBroken()); // true
 
 console.log(arm.durability); // Infinity
-console.log(bow.isBroken()); // false
+console.log(arm.isBroken()); // false
 ```
 
 6. Создайте экземпляры оружия из **таблицы 1** и экземпляры улучшенного из **таблицы 2**.
@@ -124,12 +124,12 @@ console.log(bow.isBroken()); // false
 Потребуется создать подклассы для каждого оружия, которые будут вызывать конструктор родителя с определенными в таблицах параметрами.
 
 ```js
-const bow = new Bow();
+const newBow = new Bow();
 
-console.log(bow.name); // Лук
-console.log(bow.attack); // 10
-console.log(bow.durability); // 200
-console.log(bow.range); // 3
+console.log(newBow.name); // Лук
+console.log(newBow.attack); // 10
+console.log(newBow.durability); // 200
+console.log(newBow.range); // 3
 ```
 
 ### Критерии выполнения
