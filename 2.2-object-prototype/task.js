@@ -12,5 +12,5 @@ function getAverageMark(marks) {
 
 function checkBirthday(birthday) {
 
-    return ((Date.now() - +new Date(birthday)) / (60000 * 60 * 24 * 365)) > 18;
+    return ((Date.now() - +new Date(birthday)) / (60000 * 60 * 24 * 365.25)) > 18;
 }
