@@ -52,24 +52,3 @@ function getTriangle(a, b, c) {
     }
 
 }
-
-/*
-function foo(n) {
-    return num => n + num;
-}
-
-const addOne = foo(1);
-const addTen = foo(10);
-
-console.log(addOne(10));
-console.log(addTen(10));
-
-function urlGenerator(domain) {
-    return url => `https://${url}.${domain}`;
-}
-
-const comUrl = urlGenerator('com');
-
-console.log(comUrl('vk'));
-console.log(comUrl('netflix'));
-console.log(comUrl('google'));*/
